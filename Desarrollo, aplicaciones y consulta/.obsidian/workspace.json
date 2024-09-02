@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "5c99cbcf757665f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cc6d0c8da73783a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e5f7edc0dc797cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semana 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "326d2e6492d76562",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3a62babed2d849a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "79f9ee969e76cfef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c78c253173104c5a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9a4ded5f63d85e32",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Management",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "27ab7bfcea389125",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3ee383db1e2b5ee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf76adf62b61fd13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffb4e90a8e5987d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f7f549bed8fef16",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3c0349622dd0e762",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6314ed0524cd13f0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.canvas"
+              }
+            }
+          },
+          {
+            "id": "167b3e23aa44eb32",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "326d2e6492d76562",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "Semana 2.md",
+    "Semana 1.md",
+    "Temario.md",
+    "Temas a investigar.md",
+    "Objetivo.md",
+    "Excalidraw/Drawing 2024-08-22 10.46.25.excalidraw.md",
+    "Excalidraw",
+    "Actividad 1.md",
+    "2024-08-20.md",
+    "lenin/Conceptos.md",
+    "Eduardo",
+    "lenin",
+    "Untitled 1.canvas"
+  ]
+}
