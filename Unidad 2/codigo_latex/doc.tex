@@ -1,0 +1,175 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry} % Configuración de márgenes y dimensiones de página
+
+\usepackage[utf8]{inputenc} % Codificación de caracteres
+\usepackage[spanish]{babel} % Configuración de idioma español
+\usepackage{amssymb} % Símbolos matemáticos adicionales
+\usepackage{subfigure} % Creación de subfiguras dentro de una figura
+\usepackage{newunicodechar} % Soporte para caracteres Unicode
+\usepackage{graphicx} % Inclusión de imágenes
+\usepackage{amsmath} % Ampliación de funcionalidades matemáticas
+\usepackage{xspace} % Control del espacio después de comandos
+\usepackage{booktabs} % Mejora la apariencia de las tablas
+\usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor} % Colores personalizados para tablas
+\usepackage{url} % Inclusión y formato de enlaces URL
+\usepackage{lineno} % Numeración de líneas
+\usepackage{enumitem} % Control de listas y enumeraciones
+\usepackage{soul} % Resaltado de texto con subrayado
+\usepackage[numbers]{natbib} % Citas bibliográficas y bibliografía
+\usepackage[colorlinks=true, bookmarks=false, citecolor=blue, urlcolor=blue, linkcolor=blue, linktoc=page]{hyperref} % Creación de enlaces y referencias
+\usepackage{titlesec} % Control del formato de títulos de sección
+\usepackage{fancyhdr} % Personalización de encabezados y pies de página
+\usepackage{datetime} % Manipulación de fechas y tiempos
+% Modificar márgenes
+\geometry{left=2.5cm, right=2.5cm, top=2.0cm, bottom=2.0cm}
+% Espaciado entre líneas
+\linespread{1.5} 
+% Cambiar nombre a tablas
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+% Cambiar nombre a lista de tablas
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}
+% Modificar el estilo de los capítulos
+\titleformat{\chapter}[display]
+{\color{black}\fontfamily{pcr}\LARGE\scshape\raggedleft}
+{\chaptertitlename\ \color{red}\fontsize{20}{00}\mdseries\thechapter} {-10pt} {\color{black}\rmfamily\huge}
+%\titlespacing*{\chapter}{0pt}{0pt}{50pt}
+% Diseño del encabezado y pie de página
+\pagestyle{fancy}
+\setlength{\headheight}{14.49998pt} % Ajustar la altura de la cabecera
+\addtolength{\topmargin}{-2.49998pt} % Compensar ajustando el margen superior
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+% Quitar espacio vertical en listas
+\setlist[itemize]{noitemsep, topsep=0pt}
+% Numerar las secciones
+\setcounter{secnumdepth}{4} % Establece la profundidad de numeración de secciones
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{} % Define el formato de las subsubsubsecciones
+% Modificar la tabla de contenido
+\setcounter{tocdepth}{4}
+\addto\captionsspanish{\renewcommand{\contentsname}{Contenido}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% AQUI INICIA EL DOCUMENTO %%%%%%%
+\begin{document}
+\pagenumbering{Roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\begin{minipage}[c]{0.15\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{01_Figuras/00_TECNM.png}
+\end{minipage}
+\hfill % Espacio horizontal entre las cajas
+\begin{minipage}[c]{0.8\textwidth}
+    \centering
+        \textsc{\large Tecnológico Nacional de México campus: Pabellón de Arteaga}\\[0.3cm]
+        \textsc{\large Tecnologías de la información y comunicaciones}\\[0.3cm]
+        \hrule height1pt
+        \vspace{0.1cm}
+        \hrule height2pt
+        \vspace{0.3cm}
+\end{minipage}
+
+\begin{minipage}[c]{0.15\textwidth}
+    \vspace{0.5cm}
+    \hspace{0.5cm}
+    \vrule width1pt height15cm 
+    \hspace{0.05cm}
+    \vrule width2pt height15cm
+\end{minipage}
+\hfill % Espacio horizontal entre las cajas
+\begin{minipage}[c]{0.8\textwidth}
+    \centering
+        \textbf{\large Monitorización de invernaderos }\\[1cm]
+        \text{\large Por}\\[1cm]
+        \text{\Large Ángel Isaac Fonseca Gómez}\\[1cm]
+        \textit{\large Primer avance de tesis presentado al Departamento de Ingeniería como parte del proceso para obtener el grado de:}\\[1cm]
+        \textbf{\Large Ingeniero en Tecnologías de la información y comunicación.}\\[1cm]
+        \text{\large Dirigido por:}\\[1cm]
+        \text{\Large PhD. Ernesto Olvera}\\[1cm]
+\end{minipage}
+
+\begin{minipage}[c]{0.15\textwidth}
+  \centering
+\end{minipage}
+\hfill % Espacio horizontal entre las cajas
+\begin{minipage}[c]{0.8\textwidth}
+    \centering
+        \mdseries{\large Pabellón de Arteaga, Aguascalientes, \the\year}
+\end{minipage}
+
+\end{titlepage}
+\restoregeometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUMEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\addcontentsline{toc}{chapter}{Resumen}
+\begin{center}
+\textsc{\Huge Resumen}\\[0.5cm]
+\textbf{\large Monitorización de invernaderos}\\[0.25cm]
+\text{\large Por: Ángel Isaac Fonseca Gómez}\\[0.5cm]
+\end{center}
+
+
+
+\begin{flushright}
+    \textit{\large Dirigido por:}\\
+    \textit{\large Vicente Rico Ramírez, PhD.}
+\end{flushright}
+
+
+\restoregeometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLA DE CONTENIDO %%%%%%%%%%%%%%%%%
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+\chapter{Introducción}
+\chapter{Objetivo}
+\large{Implementar un sistema web de monitorización inteligente, con la opción de graficar la información para mejorar la comprensión de los datos brindados por los sensores.}\\[1cm]
+\large{Con los siguientes objetivos especificos: }
+\begin{itemize}
+    \item Proveer fácil comprensión de los datos.
+    \item Permitir revisión histórica de datos.
+    \item Facilitar la fácil monitorización en tiempo real con los sensores.
+    \item Acceso remoto al sistema.
+    \item Generar modularización para facilitar el crecimiento.
+\end{itemize}
+\chapter{Resumen entrevista}
+\begin{itemize} \item \textbf{¿Cuál es el propósito final del sistema?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Quién será el usuario principal del sistema y cuál es su nivel de experiencia técnica?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Qué información necesitan los usuarios para tomar decisiones clave en el día a día?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cómo se espera que los usuarios interactúen con el sistema?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Qué tan crucial es el monitoreo en tiempo real para la operación del invernadero?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cómo se deben gestionar y presentar las alertas críticas?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Se espera que el sistema no solo monitoree, sino que también automatice acciones en el invernadero?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cuál es la frecuencia de recolección de datos necesaria para garantizar una toma de decisiones eficiente?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Qué desafíos actuales enfrentan con la infraestructura existente?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cuántos usuarios deben acceder simultáneamente al sistema, y desde qué dispositivos?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cómo se debería gestionar el mantenimiento y el soporte del sistema a lo largo del tiempo?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Existen expectativas de escalabilidad?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Qué tipo de datos históricos se consideran críticos, y durante cuánto tiempo deben almacenarse?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Cuáles son las situaciones de emergencia o fallos más comunes que deben ser gestionados automáticamente por el sistema?} \ [Aquí agregar la respuesta correspondiente] \item \textbf{¿Qué tipo de visualizaciones o reportes son necesarios para facilitar la comprensión de los datos?} \ [Aquí agregar la respuesta correspondiente] \end{itemize}
+
+\chapter{Requerimientos}
+
+Este capítulo describe los requerimientos que el sistema de monitorización de invernaderos debe cumplir para garantizar su correcta operación. Los requerimientos se dividen en dos secciones: funcionales y no funcionales, destacando aquellos que pueden ser medidos de manera objetiva.
+
+\section{Requerimientos Funcionales}
+
+
+\section{Requerimientos No Funcionales}
+
+\begin{table}
+\centering
+\begin{tabularx}{\textwidth}{|c|X|c|}
+\hline
+\textbf{Nombre} & \textbf{Descripción} & \textbf{Versión} \\ \hline
+\textbf{RNF-01: Tiempo de respuesta del sistema} & El tiempo de respuesta para cargar cualquier vista no debe exceder los 2 segundos bajo condiciones normales de carga con hasta 50 usuarios simultáneos. & 1.0 \\ \hline
+\textbf{RNF-02: Escalabilidad del sistema} & El sistema debe escalar horizontalmente, soportando hasta 100 invernaderos adicionales sin que el tiempo de respuesta supere los 3 segundos. & 1.0 \\ \hline
+\textbf{RNF-03: Disponibilidad del sistema} & El sistema debe estar disponible el 99.9\% del tiempo, permitiendo un máximo de 8 horas de inactividad al año. & 1.0 \\ \hline
+\textbf{RNF-04: Seguridad de la información} & Toda la información transmitida deberá estar cifrada mediante SSL/TLS para proteger la confidencialidad de los datos. & 1.0 \\ \hline
+\textbf{RNF-05: Autenticación y control de acceso} & Solo administradores tendrán acceso. Se implementará autenticación multifactor (MFA), completándose en un tiempo máximo de 5 segundos. & 1.0 \\ \hline
+\end{tabularx}
+\caption{Requerimientos no funcionales}
+\end{table}
+
+
+
+
+\newpage
+\bibliographystyle{elsarticle-num-names}4
+
+\bibliography{03_Bibliografias.bib}
+\end{document}
