@@ -1,0 +1,22 @@
+\chapter{METODOLOGÍA}
+
+\lipsum[1-1] \parencite{latex2e}
+
+En la \autoref{tab:tabla1} podemos observar un ejemplo de tabla.
+
+\begin{table}[H]
+	\centering
+	\caption{Mi tabla}\label{tab:tabla1}
+	\begin{tabular}{@{}llr@{}}
+		\toprule
+		\multicolumn{2}{c}{Item} &                          \\ \cmidrule(r){1-2}
+		Animal                   & Description & Price (\$) \\ \midrule
+		Gnat                     & per gram    & 13.65      \\
+		                         & each        & 0.01       \\
+		Gnu                      & stuffed     & 92.50      \\
+		Emu                      & stuffed     & 33.33      \\
+		Armadillo                & frozen      & 8.99       \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+Este es un ejemplo de una referencia \autoref{noexiste} y de una cita\autocite{noexiste} no encontradas.

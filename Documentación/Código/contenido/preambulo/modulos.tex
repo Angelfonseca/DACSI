@@ -1,0 +1,71 @@
+\prechapter{Modulos del sistema}
+
+\section{Módulo de Usuarios}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor[HTML]{FCE8B2} 
+    \textbf{Campo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+    ID & Entero & Identificador único del usuario. \\ \hline
+    Nombre & Cadena de texto & Nombre completo del usuario. \\ \hline
+    Nombre de Usuario & Cadena de texto & Nombre único de identificación del usuario. \\ \hline
+    Correo Electrónico & Cadena de texto & Dirección de correo del usuario. \\ \hline
+    Rol & Cadena de texto & Rol del usuario en el sistema (Admin, Usuario). \\ \hline
+    Contraseña & Cadena de texto & Contraseña encriptada para acceder al sistema. \\ \hline
+    Fecha de Creación & Fecha/Hora & Momento en que se creó el usuario. \\ \hline
+    \end{tabular}
+    \caption{Especificaciones del Módulo de Usuarios.}
+\end{table}
+
+\section{Módulo de Sensores}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor[HTML]{FCE8B2} 
+    \textbf{Campo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+    ID & Entero & Identificador único del sensor. \\ \hline
+    Módulo & Cadena de texto & Nombre del módulo al que pertenece el sensor. \\ \hline
+    Sensores & Arreglo & Conjunto de sensores, cada uno con propiedades como: \\ \hline
+    \hspace{5mm} Sensor & Cadena de texto & Tipo de sensor (Temperatura, Humedad, Luz). \\ \hline
+    \hspace{5mm} Amp & Decimal & Valor de amperaje reportado por el sensor. \\ \hline
+    \hspace{5mm} Volt & Decimal & Valor de voltaje reportado por el sensor. \\ \hline
+    \hspace{5mm} Pot & Decimal & Valor de potencia reportado por el sensor. \\ \hline
+    Fecha de Creación & Fecha/Hora & Momento en que se creó el registro del sensor. \\ \hline
+    \end{tabular}
+    \caption{Especificaciones del Módulo de Sensores.}
+\end{table}
+
+\section{Módulo de Graficación}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor[HTML]{FCE8B2} 
+    \textbf{Campo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+    ID & Entero & Identificador único de la gráfica. \\ \hline
+    Tipo de Gráfica & Cadena de texto & Tipo de visualización (Línea, Barras). \\ \hline
+    Datos & JSON & Datos a graficar en formato JSON. \\ \hline
+    Rango de Fechas & Fecha/Hora & Intervalo de tiempo para el que se generan los datos. \\ \hline
+    Fecha de Creación & Fecha/Hora & Momento en que se creó el registro de la gráfica. \\ \hline
+    \end{tabular}
+    \caption{Especificaciones del Módulo de Graficación.}
+\end{table}
+
+\section{Módulo de Alertas}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor[HTML]{FCE8B2} 
+    \textbf{Campo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+    ID & Entero & Identificador único de la alerta. \\ \hline
+    Tipo de Alerta & Cadena de texto & Tipo de alerta (Crítica, Advertencia). \\ \hline
+    Mensaje & Cadena de texto & Descripción de la alerta generada. \\ \hline
+    Fecha de Generación & Fecha/Hora & Momento en que se generó la alerta. \\ \hline
+    Estado & Cadena de texto & Estado de la alerta (Leída, No leída). \\ \hline
+    \end{tabular}
+    \caption{Especificaciones del Módulo de Alertas.}
+\end{table}
+

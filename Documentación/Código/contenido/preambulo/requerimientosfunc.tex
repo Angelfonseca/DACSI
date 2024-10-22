@@ -1,0 +1,115 @@
+\prechapter{Requerimientos}
+
+Este capítulo describe los requerimientos que el sistema de monitorización de invernaderos debe cumplir para garantizar su correcta operación. Los requerimientos se dividen en dos secciones: funcionales y no funcionales, destacando aquellos que pueden ser medidos de manera objetiva.
+
+\section{Requerimientos Funcionales y no funcionales}
+
+% Ajuste el estilo de las tablas
+\renewcommand{\arraystretch}{1.5} % Espacio entre filas
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento Funcional}} \\ \hline
+\textbf{RF-01} & \textbf{Almacenamiento de datos de los sensores:} El sistema guardará automáticamente los datos recolectados por los sensores, registrando valores como voltaje, amperaje y potencia. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} MEDIA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento Funcional RF-01}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento Funcional}} \\ \hline
+\textbf{RF-02} & \textbf{Consulta de sensores por área:} Los usuarios podrán consultar los datos de los sensores filtrados por áreas del invernadero, permitiendo obtener información específica de cada sección. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} MEDIA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento Funcional RF-02}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento Funcional}} \\ \hline
+\textbf{RF-03} & \textbf{Visualización gráfica de datos por fecha:} El sistema permitirá graficar los datos recolectados por los sensores en intervalos de fechas seleccionadas por el usuario, proporcionando una visualización clara de las tendencias. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} MEDIA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento Funcional RF-03}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento Funcional}} \\ \hline
+\textbf{RF-04} & \textbf{Visualización de los últimos datos de los sensores:} Los usuarios podrán consultar los datos más recientes recolectados por los sensores, mostrando la última información disponible en tiempo real. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} MEDIA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento Funcional RF-04}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento Funcional}} \\ \hline
+\textbf{RF-05} & \textbf{Graficación de múltiples sensores:} Los usuarios podrán seleccionar varios sensores para graficar sus datos simultáneamente, permitiendo la comparación de datos entre diferentes fechas. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} MEDIA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento Funcional RF-05}
+\end{table}
+% Ajuste el estilo de las tablas
+\renewcommand{\arraystretch}{1.5} % Espacio entre filas
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento No Funcional}} \\ \hline
+\textbf{RNF-01} & \textbf{Tiempo de respuesta del sistema:} El tiempo de respuesta para cargar cualquier vista no debe exceder los 2 segundos bajo condiciones normales de carga con hasta 50 usuarios simultáneos. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} ALTA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento No Funcional RNF-01}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento No Funcional}} \\ \hline
+\textbf{RNF-02} & \textbf{Escalabilidad del sistema:} El sistema debe escalar horizontalmente, soportando hasta 100 invernaderos adicionales sin que el tiempo de respuesta supere los 3 segundos. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} ALTA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento No Funcional RNF-02}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento No Funcional}} \\ \hline
+\textbf{RNF-03} & \textbf{Disponibilidad del sistema:} El sistema debe estar disponible el 99.9\% del tiempo, permitiendo un máximo de 8 horas de inactividad al año. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} ALTA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento No Funcional RNF-03}
+\end{table}
+\vspace{1cm} % Espacio adicional
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Requerimiento No Funcional}} \\ \hline
+\textbf{RNF-04} & \textbf{Seguridad de la información:} Toda la información transmitida deberá estar encriptada y cumplir con las regulaciones de protección de datos. & \textbf{Versión 1.0} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Prioridad:}} ALTA & \multicolumn{2}{l|}{\textbf{Dificultad:} MEDIA} \\ \hline
+\end{tabular}
+\caption{Requerimiento No Funcional RNF-04}
+\end{table}

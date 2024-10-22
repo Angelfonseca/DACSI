@@ -1,0 +1,80 @@
+\documentclass[]{ito}
+% Paquetes de prueba
+\usepackage{lipsum}
+
+\autor{Ángel Isaac Fonseca Gómez}
+\titulo{Framework para dispositivos IoT}
+\director{NOMBRE DEL DIRECTOR}
+\codirector{NOMBRE DEL CODIRECTOR}
+\fecha{\today}
+\keywords{MonogoDb, JavaScript, TypeScript, NodeJs, React, Backend, Frontend}
+\palabras{MonogoDb, JavaScript, TypeScript, NodeJs, React, Backend, Frontend}
+
+\graphicspath{ {imagenes/} }
+\addbibresource{referencias.bib}
+
+\includeonly{
+    contenido/preambulo/resumen,
+    contenido/preambulo/abstract,
+    contenido/preambulo/introduccion,
+    contenido/preambulo/planteamiento,
+    contenido/preambulo/justificacion,
+    contenido/preambulo/entrevista,
+    contenido/preambulo/diagramafun,
+    contenido/preambulo/objetivos,
+    contenido/preambulo/modulos,
+    contenido/preambulo/requerimientosfunc,
+    contenido/preambulo/contribucion,
+    contenido/capitulos/antecedentes,
+    contenido/capitulos/estado,
+    contenido/capitulos/metodologia,
+    contenido/capitulos/resultados,
+    contenido/epilogo/conclusiones,
+    contenido/epilogo/recomendaciones,
+    contenido/epilogo/productos,
+    contenido/epilogo/anexos
+}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\listoffigures
+\listoftables
+\listofeqs
+
+% Preambulo
+\include{contenido/preambulo/resumen}
+\include{contenido/preambulo/abstract}
+\include{contenido/preambulo/introduccion}
+\include{contenido/preambulo/planteamiento}
+\include{contenido/preambulo/justificacion}
+\include{contenido/preambulo/entrevista}
+\include{contenido/preambulo/objetivos}
+\include{contenido/preambulo/contribucion}
+\include{contenido/preambulo/diagramafun}
+\include{contenido/preambulo/modulos}
+\include{contenido/preambulo/requerimientosfunc}
+
+
+% Capitulos
+\include{contenido/capitulos/antecedentes}
+\include{contenido/capitulos/estado}
+\include{contenido/capitulos/metodologia}
+\include{contenido/capitulos/resultados}
+
+% Epilogo
+\include{contenido/epilogo/conclusiones}
+\include{contenido/epilogo/recomendaciones}
+
+\printbibliography[title={REFERENCIAS BIBLIOGRÁFICAS},heading=bibintoc]
+
+\include{contenido/epilogo/productos}
+\include{contenido/epilogo/anexos}
+
+
+
+
+
+\end{document}
