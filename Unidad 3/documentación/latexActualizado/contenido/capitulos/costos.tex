@@ -1,0 +1,113 @@
+\prechapter{Cotización y Costos}
+
+El desarrollo e implementación del proyecto LIA se diseñó bajo la filosofía de utilizar tecnologías \textit{open source}, lo que permitió reducir significativamente los costos asociados a licencias de software. Sin embargo, se consideraron los costos relacionados con la infraestructura necesaria para el despliegue y mantenimiento del sistema. A continuación, se presentan los elementos principales de costos:
+
+\subsection{Infraestructura de Hosting}
+El sistema puede implementarse en dos opciones principales de infraestructura, según las necesidades y preferencias del usuario final:
+
+\subsubsection{Opción 1: Azure}
+El uso de Microsoft Azure ofrece ventajas como escalabilidad, redundancia y servicios gestionados, ideales para un entorno en producción.
+\begin{itemize}
+    \item \textbf{Plan Básico de Azure App Service:} 
+    \begin{itemize}
+        \item Costo estimado mensual: \$20 USD (instancia básica de hosting).
+        \item Almacenamiento adicional: \$5 USD/mes por cada 50 GB.
+    \end{itemize}
+    \item \textbf{Base de Datos en Azure:}
+    \begin{itemize}
+        \item Plan MongoDB gestionado: \$25 USD/mes (almacenamiento inicial de 10 GB, escalable según el uso).
+    \end{itemize}
+    \item \textbf{Total estimado mensual en Azure:} \$50 USD (dependiendo del nivel de uso y escalabilidad).
+\end{itemize}
+
+\subsubsection{Opción 2: Servidor Local con Docker}
+Esta opción implica utilizar un servidor local con contenedores Docker para gestionar el sistema, lo que puede reducir costos a largo plazo pero requiere una inversión inicial en hardware.
+\begin{itemize}
+    \item \textbf{Hardware:}
+    \begin{itemize}
+        \item Servidor con especificaciones recomendadas:
+        \begin{itemize}
+            \item Procesador: Intel Xeon o AMD Ryzen (8 núcleos).
+            \item RAM: 16 GB.
+            \item Almacenamiento: SSD de 1 TB.
+        \end{itemize}
+        \item Costo estimado: \$1,000 USD (único pago).
+    \end{itemize}
+    \item \textbf{Energía Eléctrica:}
+    \begin{itemize}
+        \item Consumo estimado mensual: \$15 USD.
+    \end{itemize}
+    \item \textbf{Configuración y Mantenimiento:}
+    \begin{itemize}
+        \item Instalación inicial de Docker y servicios: \$200 USD (único pago si es realizado por un técnico especializado).
+        \item Mantenimiento periódico: \$10 USD/mes.
+    \end{itemize}
+    \item \textbf{Total estimado en el primer año:} \$1,200 USD (incluyendo hardware, configuración y energía).
+    \item \textbf{Costo recurrente anual a partir del segundo año:} \$300 USD.
+\end{itemize}
+
+\subsection{Resumen Comparativo de Costos}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Concepto} & \textbf{Azure (USD/mes)} & \textbf{Servidor Local (USD/año)} \\ \hline
+Infraestructura inicial & \$50 USD & \$1,200 USD \\ \hline
+Costo recurrente & \$600 USD/año & \$300 USD/año \\ \hline
+Flexibilidad y escalabilidad & Alta & Media \\ \hline
+Requiere hardware inicial & No & Sí \\ \hline
+\end{tabular}
+\caption{Comparativa de costos entre Azure y servidor local con Docker.}
+\end{table}
+
+\subsection{Conclusión sobre los Costos}
+Ambas opciones de infraestructura ofrecen ventajas y desventajas que deben ser evaluadas según las necesidades específicas del usuario final:
+\begin{itemize}
+    \item \textbf{Azure:} Recomendado para usuarios que buscan una solución rápida de implementar, altamente escalable y con soporte técnico robusto.
+    \item \textbf{Servidor Local con Docker:} Ideal para usuarios con restricciones presupuestarias a largo plazo y conocimientos técnicos para administrar el hardware y software.
+\end{itemize}
+
+Gracias al uso de tecnologías \textit{open source}, el costo total del proyecto se mantiene accesible, con la principal inversión concentrada en el hosting y la infraestructura de despliegue.
+
+\subsection{Costos de Desarrollo}
+
+El desarrollo e implementación del proyecto requirió las siguientes actividades, las cuales se detallan a continuación:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Concepto} & \textbf{Costo (USD)} & \textbf{Detalle} \\ \hline
+Horas de Desarrollo & 1,080 USD & 60 horas a 18 USD/hora \\ \hline
+Impuestos (IVA 16\%) & 172.80 USD & 16\% sobre el costo de desarrollo \\ \hline
+Capacitación (3 horas) & 33 USD & 3 horas a 11 USD/hora \\ \hline
+Capacitación (5 horas) & 55 USD & 5 horas a 11 USD/hora \\ \hline
+\textbf{Subtotal} & 1,285.80 USD & \\ \hline
+\textbf{Total (IVA incluido)} & 1,457.80 USD & \\ \hline
+\end{tabular}
+\caption{Desglose de costos de desarrollo, capacitación e impuestos.}
+\end{table}
+
+\subsection{Garantía y Trabajo Adicional}
+
+\begin{itemize}
+    \item Se ofrece una garantía de **6 meses sin costo adicional**.
+    \item Cualquier hora extra fuera de garantía se cobrará a **22 USD/hora**.
+\end{itemize}
+
+\subsection{Resumen de Costos}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Concepto} & \textbf{Costo (USD)} \\ \hline
+Desarrollo (60 horas) & 1,080 USD \\ \hline
+Impuestos (16\% IVA) & 172.80 USD \\ \hline
+Capacitación (3-5 horas) & 33 - 55 USD \\ \hline
+Garantía & 0 USD (6 meses) \\ \hline
+Trabajo adicional fuera de garantía & 22 USD/hora \\ \hline
+\textbf{Total (IVA incluido)} & \textbf{1,457.80 USD} \\ \hline
+\end{tabular}
+\caption{Resumen de costos del proyecto LIA.}
+\end{table}

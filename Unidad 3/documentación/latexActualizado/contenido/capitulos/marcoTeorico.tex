@@ -1,0 +1,32 @@
+\prechapter{Marco Teórico}
+
+En el desarrollo del sistema ITPA: Monitorizador IOT, se utilizaron una serie de tecnologías y herramientas que se encuentran entre las más utilizadas en el ámbito del desarrollo web moderno. A continuación, se describen las principales tecnologías utilizadas y el motivo de su elección para este proyecto.
+
+\subsection{JavaScript}
+JavaScript es un lenguaje de programación ampliamente utilizado para el desarrollo web, permitiendo la creación de aplicaciones interactivas tanto en el lado del cliente como en el lado del servidor. En este proyecto, JavaScript fue utilizado para implementar tanto la parte de frontend como la de backend. En el frontend, JavaScript permite una experiencia de usuario dinámica mediante la manipulación del DOM (Document Object Model), mientras que en el backend, con Node.js, permite la ejecución de código en el servidor, facilitando la creación de APIs RESTful para la interacción con la base de datos.
+
+\subsection{React}
+React es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario. React facilita el desarrollo de aplicaciones web modernas y reactivas mediante el uso de componentes reutilizables. En este proyecto, React fue utilizado para el desarrollo del frontend, permitiendo una interfaz de usuario dinámica y eficiente. La capacidad de React para actualizar de forma eficiente solo aquellas partes de la interfaz que han cambiado, hace que la experiencia del usuario sea más fluida.
+
+\subsection{MongoDB}
+MongoDB es una base de datos NoSQL orientada a documentos que almacena la información en formato JSON. Esta base de datos fue seleccionada por su flexibilidad y escalabilidad, características esenciales para un sistema que podría manejar una gran cantidad de datos en el futuro. MongoDB es altamente compatible con JavaScript, ya que utiliza un formato de documento similar a JSON (BSON), lo que facilita su integración con Node.js y otras tecnologías relacionadas.
+
+\subsection{Express}
+Express es un framework para Node.js que facilita la creación de aplicaciones web y APIs. Express simplifica el manejo de rutas, la gestión de solicitudes HTTP y la integración de middleware, lo que permite crear APIs de manera rápida y eficiente. En el proyecto LIA, Express fue utilizado para construir las rutas que gestionan las solicitudes del frontend, permitiendo la comunicación entre el cliente y el servidor, y facilitando la conexión con la base de datos MongoDB.
+
+\subsection{Node.js}
+Node.js es un entorno de ejecución para JavaScript que permite ejecutar código JavaScript en el servidor. Node.js se destaca por su capacidad para manejar un gran número de conexiones simultáneas con un rendimiento elevado gracias a su modelo de I/O no bloqueante. En este proyecto, Node.js fue utilizado para el desarrollo del backend, permitiendo la creación de un servidor eficiente y escalable que maneja las peticiones del cliente, interactúa con la base de datos y devuelve los resultados al frontend.
+
+\subsection{HTML y CSS}
+HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para estructurar contenido en la web. Por su parte, CSS (Cascading Style Sheets) se utiliza para diseñar y estilizar el contenido de las páginas web. En el proyecto ITPA: Monitorizador IOT, HTML y CSS fueron utilizados para crear la estructura y el diseño de las interfaces de usuario. Se aplicaron principios de diseño responsivo para garantizar que la aplicación se visualizara correctamente en diferentes dispositivos y tamaños de pantalla.
+
+\subsection{Justificación de las Tecnologías Utilizadas}
+La elección de las tecnologías mencionadas se basó en varios factores clave:
+\begin{itemize}
+    \item \textbf{Desarrollo Full-Stack JavaScript:} La utilización de JavaScript en todo el stack tecnológico (frontend y backend) simplifica el proceso de desarrollo y mejora la eficiencia, ya que los desarrolladores pueden trabajar con un solo lenguaje a lo largo de todo el proyecto.
+    \item \textbf{Escalabilidad y Flexibilidad:} MongoDB, como base de datos NoSQL, ofrece una gran flexibilidad para manejar datos no estructurados y escalabilidad horizontal, lo que la hace ideal para proyectos que puedan crecer con el tiempo.
+    \item \textbf{Desarrollo Ágil:} React permite un desarrollo ágil y eficiente, al facilitar la creación de interfaces dinámicas y modulares, lo que mejora la mantenibilidad del código a largo plazo.
+    \item \textbf{Eficiencia en el Backend:} Node.js, combinado con Express, proporciona una solución eficiente para manejar grandes volúmenes de peticiones simultáneas sin que el rendimiento se vea afectado.
+\end{itemize}
+
+En resumen, la combinación de JavaScript, React, MongoDB, Express, Node.js, HTML y CSS permite construir un sistema robusto, escalable, y con una experiencia de usuario fluida, manteniendo un enfoque de desarrollo ágil y eficiente.
